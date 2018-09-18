@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+  <title>LadyHoops - Gallery</title>
+</head>
+
+<body>
+
+  <p class="title">Gallery</p>
+  <!--The Navigation Bar-->
+  <div class="navbar">
+    <nav class="main">
+      <ul class="main-nav">
+        <li><a href="https://www.bend.k12.or.us/summit" target="_blank"><img src="summit-logo.png"></a>
+          <li style="padding-top: 2%"><a href="index.html">Home</a></li>
+          <li style="padding-top: 2%"><a href="coaches.html">Coaches</a></li>
+          <li style="padding-top: 2%"><a href="roster.html">Roster</a></li>
+          <li style="padding-top: 2%"><a class="active" href="gallery.html">Gallery</a></li>
+          <li style="padding-top: 2%"><a href="http://www.osaa.org/teams/21364" target="_blank">Scores & Standings</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--The slide show starts here-->
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="bigsislittlesis2.jpeg">
+    <img class="mySlides" src="bigsislittlesis1.jpeg">
+    <img class="mySlides" src="teamretreat1.jpeg">
+    <img class="mySlides" src="teamretreat2.jpeg">
+    <img class="mySlides" src="teamretreat3.jpeg">
+    <img class="mySlides" src="teamretreat4.jpeg">
+    <img class="mySlides" src="giftwrap1.jpeg">
+    <img class="mySlides" src="giftwrap2.jpeg">
+    <img class="mySlides" src="giftwrap3.jpeg">
+    <img class="mySlides" src="giftwrap4.jpeg">
+    <img class="mySlides" src="varsityteam.jpeg">
+
+    <!--What's the purpose??-->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <!--Footer-->
+  <div class="footer-main">
+    <div class="foot-seg">
+      <h4>Summit High School Girl's Basketball</h4>
+      <p class="para">To learn more about Summit click the Summit logo.</p>
+      <p class="para">If this information is outdated, go to the <a class="osaalink" href="http://www.osaa.org/teams/21364" target="_blank">OSAA Website</a></p>
+    </div>
+    <div class="foot-seg">
+      <a href="https://www.bend.k12.or.us/summit" target="_blank">
+          <img src="summit-logo.png">
+        </a>
+    </div>
+    <div class="foot-seg">
+      <p class="titlereg">This website was coded by Summit High School students: William Parlan, Amber Kolar, Maddy Beck, Colby Warren and Kent Koehler</p>
+      <a class="link" href="https://www.gofundme.com/summitcoding" target="_blank">GO Fund Summit Coding!</a>
+    </div>
+
+    <!--Add this to a .js file-->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+</body>
+
+</html>
