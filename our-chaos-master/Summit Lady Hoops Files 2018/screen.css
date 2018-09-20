@@ -29,7 +29,7 @@ nav.main ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  background-color: #b7b7b7;
+  background-color: rgb(79, 84, 91);
   position: fixed;
   top: 0;
   left: 0;
@@ -45,7 +45,7 @@ nav.main li a {
   display: block;
   padding-right: 50px;
   padding-left: 50px;
-  line-height: normal;
+  line-height: auto;
   text-align: center;
   text-decoration: none;
   color: #385736;
