@@ -1,3 +1,2 @@
 # Summit-Lady-Hoops
-# max the no show
-atom://teletype/portal/ce273593-dac5-476c-9b03-139cc9833520
+atom://teletype/portal/0854c205-5a99-4974-a3b2-faba8833cc90
