@@ -1,3 +1,3 @@
 # Summit-Lady-Hoops
-# 10/1 teletype code:
-atom://teletype/portal/d5d26edc-b574-4dab-9c2a-0a26a46aa3c9
+# 10/3 teletype code:
+atom://teletype/portal/21061223-0fd0-41e8-9fdb-7f70ebb96b92
