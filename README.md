@@ -7,5 +7,3 @@ https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float
 
 https://internetingishard.com/html-and-css/responsive-design/
 
-
-Do u boaet brooop
