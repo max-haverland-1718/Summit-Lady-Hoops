@@ -1,2 +1,2 @@
-# 10/17
-atom://teletype/portal/7439dd3e-a7ed-4a25-926e-10ee882cc7d0
+# 10/18
+atom://teletype/portal/25403a9f-d7bc-47da-bb62-0aa071191465
