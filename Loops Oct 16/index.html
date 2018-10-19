@@ -1,6 +1,4 @@
-
 <!-- we should...
-4. text box fonts are ugly (Max)
 7. hamburger menu (Kaden)
 8. social media stuff (Jasper)
 9. java
@@ -9,7 +7,10 @@
 
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <meta charset="utf-8" />
   <link href="screen.css" media="screen" rel="stylesheet" type="text/css">
@@ -27,16 +28,47 @@
         <li><a href="roster.html">Roster</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="http://www.osaa.org/teams/21364" target="_blank">Standings</a></li>
+
         <div class="dropdowndiv">
-          <li><a class="dropdowncontentliimg"><img src="hamburgericon.png"></a></li>
+          <li class="dropli"><button onclick="dropToggle()" class="dropdownbutton"><img src="hamburgericon.png"></button></li>
+          <div class="dropdowncontentdiv">
+            <a class="active" href="index.html">Home</a>
+            <a href="coaches.html">Coaches</a>
+            <a href="roster.html">Roster</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="http://www.osaa.org/teams/21364" target="_blank">Standings</a>
+          </div>
+
         </div>
+
       </ul>
     </nav>
   </div>
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function dropToggle() {
+      document.getElementById("dropdowncontentli").classList.toggle("show");
+  }
 
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdownbutton')) {
+
+      var dropdowns = document.getElementsByClassName("dropdowncontentdiv");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
   <!--Page Content-->
   <div class="titlediv">
-    <p class="indextitle">Storm Girls Basketball</p>
+    <p class="indextitle">Storm Womens Basketball</p>
   </div>
   <div class="bodydiv">
     <table style="border: 0px;">
@@ -73,11 +105,11 @@
     <br><br>
     <!--Footer-->
     <div class="footer-main">
-
-
       <div class="foot-seg">
-        <p class="titlereg">This website was coded by Summit High School students: William Parlan, Amber Kolar, Maddy Beck, Colby Warren, Kent Koehler, Max Haverland, Jasper Palmer, avec Kaden Newport</p>
-
+        <p class="titlereg">This website was coded by Summit High School students: William Parlan, Amber Kolar, Maddy Beck, Colby Warren, Kent Koehler, Max Haverland, Jasper Palmer, et Kaden Newport</p>
+        <a target="_blank" href="https://www.snapchat.com/add/summit_snaps" class="fa fa-snapchat-ghost"></a>
+        <a target="_blank" href="https://twitter.com/Storm_LadyHoops?ref_src=twsrc%5Etfw" class="fa fa-twitter"></a>
+        <a target="_blank" href="https://www.instagram.com/shs_thundercloud/" class="fa fa-instagram"></a>
       </div>
     </div>
 

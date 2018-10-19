@@ -9,7 +9,7 @@ body {
 
 div.titlediv {
   background-color: white;
-  height: 300px;
+  height: 100%;
   margin-top: 15%;
 }
 
@@ -100,10 +100,8 @@ figure img {
   width: 100%;
   height: auto;
   display: block;
-  margin-left: 5%;
+  margin-left: 0%;
   margin-right: 5%;
-  border-style: solid;
-  border-width: thick;
 }
 
 figure figcaption.varsityTeam {
@@ -129,6 +127,7 @@ div.Landis {
   padding-bottom: auto;
   text-align: left;
 }
+
 .Landis img {
   text-align: center;
 }
@@ -167,14 +166,12 @@ div.Carpenter {
   text-align: left;
 }
 
-div.boximg{
-  padding-left: 1000px;
-}
-.events {
-  margin-left: auto;
-  margin-right: auto;
+div.events {
+  margin-left: 10%;
+  margin-right: 0%;
   height: 100%;
-  font-size:15px;
+  width: 60%;
+  font-size: 15px;
   background: rgb(96, 155, 91);
   font-family: "San Francisco";
   color: black;
@@ -182,9 +179,9 @@ div.boximg{
   text-align: center;
 }
 
-.events ul{
+div.events ul{
   list-style-type: none;
-  width: 75% content-box;
+  width: 75%;
 }
 
 p.indextitle {
@@ -219,46 +216,10 @@ p.booter {
   width: 67%;
 }
 
-div.goFund {
-	text-align: center;
-	font-size: 22px;
-	font-style:italic;
-}
-
 p.events {
   padding-top: 10px;
   margin-left: auto;
   font-size: 20px;
-}
-
-div.giftWrap {
-  background: rgb(18,158,0);
-  margin-top: 30px;
-  margin-left: 250px;
-  margin-right: 250px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
-
-figure figcaption.giftWrap {
-  font-size: 16px;
-  text-align: center;
-  padding-top: 10px;
-}
-
-div.teamRetreat {
-  background: rgb(18,158,0);
-  margin-top: 30px;
-  margin-left: 250px;
-  margin-right: 250px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
-
-figure figcaption.teamRetreat {
-  font-size: 16px;
-  text-align: center;
-  padding-top: 10px;
 }
 
 /*---- stuff for slideshow ----*/
@@ -270,12 +231,12 @@ div.w3-content {
 }
 
 img.mySlides {
-  padding-top: 20px;
+  padding-top: 5%x;
   width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px
+  padding-bottom: 10%
 }
 
 button.w3-button {
@@ -286,7 +247,7 @@ button.w3-button {
 /*Footer*/
 
 div.footer-main {
-/*  width: 100%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 3%;
@@ -295,7 +256,6 @@ div.footer-main {
   margin-bottom: 0%;
   height: 120px;
   background-color: rgb(96, 155, 91);
-*/
   font-size:18px;
   background: rgb(96, 155, 91);
   font-family: "San Francisco";
@@ -317,7 +277,7 @@ div.foot-seg p, h4, a, a:visited{
 }
 
 div.foot-seg {
-  float: left;
+  float: right;
   width: 50%;
 }
 
@@ -330,7 +290,7 @@ table{
 table th{
   padding-left: 4%;
   padding-right: 4%;
-  padding-top: 20px;
+  padding-top: 1%;
 }
 
 table, th {
@@ -340,7 +300,7 @@ table, th {
 table#jv2 th{
   padding-left: 2%;
   padding-right: 2%;
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 div.separatebox{
@@ -366,32 +326,47 @@ div.separatebox p.coach_text{
 
 /*---------------drop down menu stuff-------------*/
 
-button.dropmenu {
-
+.dropdowncontentdiv {
+  position: relative;
+  display: inline-block;
 }
 
-div.dropdowncontentdiv {
-
+.dropdowncontentli {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-li a.dropdowncontentli {
-
+.dropdowncontentli a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-nav.main li a.dropdowncontentliimg {
+nav.main .dropli {
+  float: right;
+  width: 25%;
+  margin-right: 10%;
+}
+
+nav.main .dropdownbutton {
   display: block;
   width: auto;
   float: right;
-  right: 0px;
-  top: 0px;
 }
 
-nav.main div.dropdowndiv {
+nav.main .dropdowndiv {
   display: none;
   float: right;
-  right: 0px;
-  top: 0px;
 }
+
+.dropdowncontentli a:hover {background-color: #ddd}
+
+.show {display:block;}
 
 /*---------------end drop down menu stuff-------------*/
 
@@ -407,14 +382,14 @@ nav.main div.dropdowndiv {
     padding-right: 20px;
     padding-left: 20px;
   }
-  nav.main li a.dropdowncontentliimg {
-    height: 100px;
+  nav.main li button.dropdownbutton {
+    height: 50px;
     width: auto;
   }
   nav.main div.dropdowndiv {
-    height: 100px;
-    width: 100px;
-    display: block;
+    height: 10%;
+    width: 10%;
+    display: inline-block;
     float: right;
     display: contents;
     z-index: 1001;
@@ -436,14 +411,14 @@ nav.main div.dropdowndiv {
     padding-left: 20px;
 
   }
-  nav.main li a.dropdowncontentliimg {
-    height: 100px;
-    width: 100px;
+  nav.main li button.dropdownbutton {
+    height: 50px;
+    width: 10%;
   }
   nav.main div.dropdowndiv {
-    height: 100px;
-    width: 100px;
-    display: block;
+    height: 10%;
+    width: 10%;
+    display: inline-block;
     float: right;
     display: contents;
     z-index: 1001;
@@ -503,10 +478,10 @@ nav.main div.dropdowndiv {
 
 article.OneCoach {
     float: left;
-    width: 48%;
+    width: 49.6%;
     background-color: none;
     height: auto;
-    padding: 2px;
+    padding: 0.2%;
     padding-bottom: auto;
 }
 
@@ -519,3 +494,34 @@ section:after {
 }
 
 /*--------------End green box misc-----------------*/
+
+/*--------------Social Media--------------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/*--------------End Social Media--------------*/
