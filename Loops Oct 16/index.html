@@ -1,15 +1,15 @@
 <!-- we should...
-7. hamburger menu (Kaden)
-8. social media stuff (Jasper)
-9. java
-10. make scalability work on the header
+1. hamburger menu & header scalability (Kaden)
+2. Java
+3. scalability on index (Max)
+4. delete gallery (max)
+5. make new website to test header
 -->
 
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <meta charset="utf-8" />
@@ -32,11 +32,11 @@
         <div class="dropdowndiv">
           <li class="dropli"><button onclick="dropToggle()" class="dropdownbutton"><img src="hamburgericon.png"></button></li>
           <div class="dropdowncontentdiv">
-            <a class="active" href="index.html">Home</a>
-            <a href="coaches.html">Coaches</a>
-            <a href="roster.html">Roster</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="http://www.osaa.org/teams/21364" target="_blank">Standings</a>
+            <a class="active dropdowncontentli" href="index.html">Home</a>
+            <a class="dropdowncontentli" href="coaches.html">Coaches</a>
+            <a class="dropdowncontentli" href="roster.html">Roster</a>
+            <a class="dropdowncontentli" href="gallery.html">Gallery</a>
+            <a class="dropdowncontentli" href="http://www.osaa.org/teams/21364" target="_blank">Standings</a>
           </div>
 
         </div>
@@ -48,7 +48,14 @@
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function dropToggle() {
-      document.getElementById("dropdowncontentli").classList.toggle("show");
+      //document.getElementsByClassName("dropdowncontentli").classList.toggle("show");
+      //document.getElementsByClassName("dropdowncontentdiv").classList.toggle("show");
+      var x = document.getElementsByClassName("dropdowncontentli");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
   }
 
   // Close the dropdown if the user clicks outside of it
@@ -107,6 +114,8 @@
     <div class="footer-main">
       <div class="foot-seg">
         <p class="titlereg">This website was coded by Summit High School students: William Parlan, Amber Kolar, Maddy Beck, Colby Warren, Kent Koehler, Max Haverland, Jasper Palmer, et Kaden Newport</p>
+      </div>
+      <div class="foot-social">
         <a target="_blank" href="https://www.snapchat.com/add/summit_snaps" class="fa fa-snapchat-ghost"></a>
         <a target="_blank" href="https://twitter.com/Storm_LadyHoops?ref_src=twsrc%5Etfw" class="fa fa-twitter"></a>
         <a target="_blank" href="https://www.instagram.com/shs_thundercloud/" class="fa fa-instagram"></a>

@@ -231,8 +231,7 @@ div.w3-content {
 }
 
 img.mySlides {
-  padding-top: 5%x;
-  width: 75%;
+  padding-top: 5%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -247,21 +246,15 @@ button.w3-button {
 /*Footer*/
 
 div.footer-main {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 3%;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-bottom: 0%;
-  height: 120px;
+  width: 99%;
+  height: 100%;
   background-color: rgb(96, 155, 91);
   font-size:18px;
   background: rgb(96, 155, 91);
   font-family: "San Francisco";
   color: black;
   float: left;
-  display: block;
+  display: inline;
   padding-top: .5%;
   padding-bottom: .5%;
   padding-left: .5%;
@@ -270,6 +263,7 @@ div.footer-main {
 }
 
 div.foot-seg p, h4, a, a:visited{
+  display: inline;
   color: black;
   font-family: "San Francisco";
   width: auto;
@@ -277,10 +271,16 @@ div.foot-seg p, h4, a, a:visited{
 }
 
 div.foot-seg {
+  display: inline;
   float: right;
   width: 50%;
 }
 
+div.foot-social{
+  display: inline;
+  float: left;
+  width: 50%
+}
 table{
   width: 100%;
   text-align: center;
@@ -332,11 +332,12 @@ div.separatebox p.coach_text{
 }
 
 .dropdowncontentli {
-  display: none;
+  position: relative;
+  display: inline-block;
+  display: inline-block;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -353,20 +354,28 @@ nav.main .dropli {
   margin-right: 10%;
 }
 
-nav.main .dropdownbutton {
+.dropdownbutton {
   display: block;
-  width: auto;
   float: right;
+  background-color: rgba(79, 84, 91, 0);
+  outline: none;
+  border-style: none;
+  height: 75px;
+  width: 75px;
 }
 
 nav.main .dropdowndiv {
-  display: none;
+  display: block;
   float: right;
+}
+
+.activedrop {
+  color: lightgrey;
 }
 
 .dropdowncontentli a:hover {background-color: #ddd}
 
-.show {display:block;}
+.show {display: block;}
 
 /*---------------end drop down menu stuff-------------*/
 
@@ -383,8 +392,8 @@ nav.main .dropdowndiv {
     padding-left: 20px;
   }
   nav.main li button.dropdownbutton {
-    height: 50px;
-    width: auto;
+    height: 75px;
+    width: 75px;
   }
   nav.main div.dropdowndiv {
     height: 10%;
@@ -412,8 +421,8 @@ nav.main .dropdowndiv {
 
   }
   nav.main li button.dropdownbutton {
-    height: 50px;
-    width: 10%;
+    height: 75px;
+    width: 75px;
   }
   nav.main div.dropdowndiv {
     height: 10%;
@@ -497,6 +506,8 @@ section:after {
 
 /*--------------Social Media--------------*/
 .fa {
+  float: left;
+  display: inline;
   padding: 20px;
   font-size: 30px;
   width: 50px;
