@@ -1,2 +1,2 @@
-# 10/24
-atom://teletype/portal/beabf458-d4c8-45f7-8c74-07a6e288d39a
+# 10/25
+dear kaden: atom://teletype/portal/ad014768-ce1d-4438-a233-a5d93ff86e7b
